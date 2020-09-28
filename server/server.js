@@ -18,7 +18,7 @@ app.use(require('./routes/usuario'));
 
  
 
-mongoose.connect(process.env.NODE_ENV,
+mongoose.connect(process.env.URLDB,
 {useNewUrlParser: true, useCreateIndex: true},
  (err, res) =>{
 if(err) throw err;

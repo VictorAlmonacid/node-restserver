@@ -4,7 +4,7 @@
 // PUERTO
 //=======================
 
-const { mongo } = require("mongoose");
+
 
 process.env.PORT = process.env.PORT || 3000;
 
@@ -21,12 +21,12 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
 let urlDB;
 
-if(process.env.NODE_ENV === 'dev'){
-    urlDB = 'mongodb://localhost:27017/cafe';
-}else{
-urlDB = 'mongodb://mongodb+srv://Zaratras22:Vito2355@cluster0.koiex.mongodb.net/cafe';
-}
- process.env.NODE_ENV = urlDB;
+// if(process.env.NODE_ENV === 'dev'){
+    // urlDB = 'mongodb://localhost:27017/cafe';
+// }else{
+urlDB = 'mongodb+srv://Zaratras22:Vito2355@cluster0.koiex.mongodb.net/cafe';
+// }
+ process.env.URLDB = urlDB;
 
 
 
